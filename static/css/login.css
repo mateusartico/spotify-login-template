@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-base: #121212;
+    --color-base: #b3b3b3;
+    --border-button-color: #818181;
+    --std-min-width: 330px;
+    --spotify-green: #1ed760;
+    --spotify-highlighted-green: #3be477;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px;
+    width: 100%;
+    height: 91vh;
+
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(50, 50, 50, 1) 100%);
+}
+
+.batcave {
+    margin: 32px;
+    height: 100%;
+}
+
+.batman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 40%;
+    padding: 32px 0;
+    margin-bottom: 32px;
+    min-width: 734px;
+
+    color: white;
+    background-color: var(--background-base);
+
+    border-radius: 8px;
+}
+
+.main-logo svg {
+    height: 36px;
+    width: 36px;
+    margin-bottom: 8px;
+}
+
+.batman h1 {
+    font-family: 'Spotify Mix';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+
+    margin-bottom: 32px;
+}
+
+.service-login-button {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    background-color: transparent;
+    color: white;
+
+    border: 1px solid var(--border-button-color);
+    border-radius: 50px;
+
+    padding: 7px 31px;
+    margin-bottom: 8px;
+    min-width: var(--std-min-width);
+
+    cursor: pointer;
+}
+
+.service-login-button:hover {
+    border: 1px solid white;
+}
+
+.service-login-button p {
+    font-family: 'Spotify Mix';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 15px;
+
+    width: 100%;
+    margin: 5px 0;
+}
+
+.service-login-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.batman hr {
+    height: 1px;
+    width: 70%;
+
+    margin: 32px 0;
+
+    background-color: #292929;
+    border: 0;
+}
+
+.label-textbox {
+    padding-bottom: 32px;
+    min-width: var(--std-min-width);
+}
+
+.label-textbox p {
+    font-family: 'Spotify Mix';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    padding-bottom: 8px;
+}
+
+.label-textbox input {
+    padding: 12px;
+    width: 100%;
+
+    background-color: transparent;
+    color: white;
+
+    outline: 0;
+    border: 1px solid var(--border-button-color);
+    border-radius: 4px;
+
+    font-family: 'Spotify Mix';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+
+    transition: all 0.2s;
+}
+
+.label-textbox input::placeholder {
+    color: var(--border-button-color);
+}
+
+.label-textbox input:hover, .label-textbox input:focus {
+    border: 1px solid white;
+}
+
+.continue-button {
+    background-color: var(--spotify-green);
+    color: black;
+    border: 0;
+    transition: 0.1s;
+    margin-bottom: 32px;
+}
+
+.continue-button:hover {
+    border: 0;
+    background-color: var(--spotify-highlighted-green);
+    position: relative;
+    scale: 1.05;
+}
+
+.donthaveaccount {
+    display: flex;
+    gap: 8px;
+
+    font-family: 'Spotify Mix';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+
+    color: var(--border-button-color);
+
+    margin-bottom: 36px;
+}
+
+.donthaveaccount a {
+    color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 9vh;
+
+    color: var(--color-base);
+    background-color: var(--background-base);
+
+    font-family: 'Spotify Mix';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+}
