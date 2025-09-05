@@ -182,6 +182,10 @@
     color: white;
 }
 
+.donthaveaccount a:hover {
+    color: var(--spotify-green);
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -197,4 +201,40 @@ footer {
     font-weight: normal;
     font-style: normal;
     font-size: 12px;
+}
+
+@media screen and (max-width: 770px) {
+    
+    .container {
+        padding: 0;
+    }
+
+    .batcave {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .batman {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+        width: 100%;
+        min-height: 91vh;
+        padding: 32px 0;
+    
+        color: white;
+        background-color: var(--background-base);
+
+        border-radius: 0;
+
+    }
+
+    footer {
+        min-width: 100%;
+        min-height: 9vh;
+    }
+
 }
